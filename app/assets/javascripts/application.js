@@ -11,5 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
+//= require custom.modernizr
+//= require foundation
 //= require_tree .
+
+$(document).foundation();
