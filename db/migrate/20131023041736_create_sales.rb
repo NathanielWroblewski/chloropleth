@@ -3,6 +3,7 @@ class CreateSales < ActiveRecord::Migration
     create_table :sales do |t|
       t.integer :number_of_sales, default: 0, null: false
       t.string  :state, null: false
+      t.string  :topojson_key, null: false
     end
   end
 end

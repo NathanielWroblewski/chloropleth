@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20131023041736) do
   create_table "sales", force: true do |t|
     t.integer "number_of_sales", default: 0, null: false
     t.string  "state",                       null: false
+    t.string  "topojson_key",                null: false
   end
 
 end

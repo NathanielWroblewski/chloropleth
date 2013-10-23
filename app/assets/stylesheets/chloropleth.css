@@ -1,0 +1,23 @@
+#state {
+  float: right;
+}
+
+path:hover {
+  opacity: 0.7;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.q-0-9 { fill:rgb(247,251,255); }
+.q-1-9 { fill:rgb(222,235,247); }
+.q-2-9 { fill:rgb(198,219,239); }
+.q-3-9 { fill:rgb(158,202,225); }
+.q-4-9 { fill:rgb(107,174,214); }
+.q-5-9 { fill:rgb(66,146,198); }
+.q-6-9 { fill:rgb(33,113,181); }
+.q-7-9 { fill:rgb(8,81,156); }
+.q-8-9 { fill:rgb(8,48,107); }
