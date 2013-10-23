@@ -1,7 +1,50 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+STATE_SALES = {
+  "CA" => "328",
+  "NY" => "76",
+  "TX" => "62",
+  "WA" => "31",
+  "IL" => "30",
+  "MA" => "29",
+  "FL" => "26",
+  "MI" => "25",
+  "VA" => "22",
+  "NJ" => "21",
+  "OH" => "18",
+  "CO" => "16",
+  "DC" => "13",
+  "PA" => "13",
+  "MO" => "11",
+  "TN" => "10",
+  "IN" => "9",
+  "OR" => "9",
+  "UT" => "8",
+  "MD" => "7",
+  "AZ" => "7",
+  "NC" => "7",
+  "MN" => "7",
+  "IA" => "6",
+  "AL" => "6",
+  "LA" => "5",
+  "NE" => "5",
+  "GA" => "3",
+  "KY" => "3",
+  "ME" => "3",
+  "CT" => "3",
+  "NV" => "3",
+  "WI" => "3",
+  "SC" => "3",
+  "RI" => "2",
+  "HI" => "2",
+  "KS" => "2",
+  "DE" => "1",
+  "ID" => "1",
+  "AR" => "1",
+  "NM" => "1",
+  "MT" => "1",
+  "WY" => "1",
+  "ND" => "1"
+}
+
+STATE_SALES.each do |state, number_of_sales|
+  Sale.create(state: state, number_of_sales: number_of_sales)
+end
